@@ -16,6 +16,12 @@ Escodoo add-ons used to extend or customize Odoo Purchase app functions.
 
 [//]: # (addons)
 
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[purchase_requisition_order_line](purchase_requisition_order_line/) | 14.0.1.0.0 |  | Purchase Requisition Order Line
+
 [//]: # (end addons)
 
 <!-- prettier-ignore-end -->
