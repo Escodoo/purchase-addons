@@ -1,0 +1,63 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_requisition_order_line
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: purchase_requisition_order_line
+#: model:ir.model.fields,field_description:purchase_requisition_order_line.field_purchase_order_line__display_name
+#: model:ir.model.fields,field_description:purchase_requisition_order_line.field_purchase_requisition__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: purchase_requisition_order_line
+#: model:ir.model.fields,field_description:purchase_requisition_order_line.field_purchase_order_line__id
+#: model:ir.model.fields,field_description:purchase_requisition_order_line.field_purchase_requisition__id
+msgid "ID"
+msgstr ""
+
+#. module: purchase_requisition_order_line
+#: model:ir.model.fields,field_description:purchase_requisition_order_line.field_purchase_order_line____last_update
+#: model:ir.model.fields,field_description:purchase_requisition_order_line.field_purchase_requisition____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: purchase_requisition_order_line
+#: model_terms:ir.ui.view,arch_db:purchase_requisition_order_line.purchase_requisition_form_view
+msgid "Lines"
+msgstr ""
+
+#. module: purchase_requisition_order_line
+#: model:ir.model.fields,field_description:purchase_requisition_order_line.field_purchase_requisition__order_line_count
+msgid "Number of Orders lines"
+msgstr ""
+
+#. module: purchase_requisition_order_line
+#: model:ir.model.fields,field_description:purchase_requisition_order_line.field_purchase_order_line__requisition_id
+msgid "Purchase Agreement"
+msgstr ""
+
+#. module: purchase_requisition_order_line
+#: model:ir.model,name:purchase_requisition_order_line.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr ""
+
+#. module: purchase_requisition_order_line
+#: model:ir.model,name:purchase_requisition_order_line.model_purchase_requisition
+#: model_terms:ir.ui.view,arch_db:purchase_requisition_order_line.purchase_order_line_search_view
+msgid "Purchase Requisition"
+msgstr ""
+
+#. module: purchase_requisition_order_line
+#: model:ir.actions.act_window,name:purchase_requisition_order_line.action_purchase_order_line_list
+msgid "Quotations Lines"
+msgstr ""
