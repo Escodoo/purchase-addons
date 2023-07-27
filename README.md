@@ -6,7 +6,7 @@
 
 <!-- /!\ do not modify above this line -->
 
-# Escodoo Odoo Purchase Addons
+# Escodoo Purchase Odoo Addons
 
 Escodoo add-ons used to extend or customize Odoo Purchase app functions.
 

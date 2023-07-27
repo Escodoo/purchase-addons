@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2023 - TODAY, Marcel Savegnago <marcel.savegnago@escodoo.com.br>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+
+    <record model="ir.actions.act_window" id="action_purchase_order_line_list">
+        <field name="name">Quotations Lines</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">purchase.order.line</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('requisition_id','=',active_id)]</field>
+        <field name="context">{
+            "default_requisition_id":active_id,
+            "default_user_id": False,
+            "group_by": ['product_id']
+            }
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="purchase_requisition_form_view">
+        <field
+            name="name"
+        >purchase.requisition.form (in purchase_requisition_order_line)</field>
+        <field name="model">purchase.requisition</field>
+        <field
+            name="inherit_id"
+            ref="purchase_requisition.view_purchase_requisition_form"
+        />
+        <field name="arch" type="xml">
+            <div name="button_box">
+                <button
+                    name="%(action_purchase_order_line_list)d"
+                    type="action"
+                    class="oe_stat_button"
+                    icon="fa-list-alt"
+                    attrs="{'invisible': [('state', '=', 'draft')]}"
+                >
+                    <field name="order_line_count" widget="statinfo" string="Lines" />
+                </button>
+            </div>
+        </field>
+    </record>
+
+<!--    <record model="ir.ui.view" id="purchase_requisition_search_view">-->
+<!--        <field name="name">purchase.requisition.search (in purchase_requisition_order_line)</field>-->
+<!--        <field name="model">purchase.requisition</field>-->
+<!--        <field name="inherit_id" ref="TODO othermodule.search_view"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            &lt;!&ndash; TODO &ndash;&gt;-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record model="ir.ui.view" id="purchase_requisition_tree_view">-->
+<!--        <field name="name">purchase.requisition.tree (in purchase_requisition_order_line)</field>-->
+<!--        <field name="model">purchase.requisition</field>-->
+<!--        <field name="inherit_id" ref="TODO othermodule.tree_view"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            &lt;!&ndash; TODO &ndash;&gt;-->
+<!--        </field>-->
+<!--    </record>-->
+
+</odoo>
