@@ -9,7 +9,7 @@ class PurchaseRequisition(models.Model):
     _inherit = "purchase.requisition"
 
     order_line_count = fields.Integer(
-        compute="_compute_orders_lines_number", string="Number of Orders lines"
+        compute="_compute_orders_lines_number", string="Number of Orders Lines"
     )
 
     @api.depends("purchase_ids")

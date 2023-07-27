@@ -2,9 +2,10 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 {
-    "name": "Purchase Requisition Order ine",
+    "name": "Purchase Requisition Order Line",
     "summary": """
-        Purchase Requisition Order Line""",
+        Adds the requisition_id field to the purchase order lines and adds an access
+        link to these lines.""",
     "version": "14.0.1.0.0",
     "license": "AGPL-3",
     "author": "Escodoo",
