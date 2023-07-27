@@ -20,7 +20,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[purchase_requisition_order_line](purchase_requisition_order_line/) | 14.0.1.0.0 |  | Purchase Requisition Order Line
+[purchase_requisition_order_line](purchase_requisition_order_line/) | 14.0.1.0.0 |  | Adds the requisition_id field to the purchase order lines and adds an access link to these lines.
 
 [//]: # (end addons)
 
