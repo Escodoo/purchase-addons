@@ -42,9 +42,12 @@ class ResPartner(models.Model):
             with self.pool.cursor() as cr:
                 cr.execute(
                     """
-                    INSERT INTO ir_logging(create_date, create_uid, type, dbname, name, level,
-                    message, path, line, func)
-                    VALUES (NOW() at time zone 'UTC', %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    INSERT INTO ir_logging(
+                        create_date, create_uid, type, dbname, name, level,
+                        message, path, line, func
+                    )
+                    VALUES (NOW() at time zone 'UTC', %s, %s, %s, %s, %s, %s, %s, %s, %s
+                    )
                 """,
                     (
                         self.env.uid,

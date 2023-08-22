@@ -13,12 +13,12 @@ class ResPartnerSqiProfile(models.Model):
 
     DEFAULT_PYTHON_CODE = """# Available variables:
 #  - env: Odoo Environment on which the sqi profile is triggered
-#  - model: Odoo Model of the record on which the sqi profile is triggered; is a void recordset
+#  - model: Odoo Model of the record on which the sqi profile is triggered;
 #  - record: record on which the sqi profile is triggered; may be void
 #  - records: recordset on which the sqi profile is triggered in multi-mode; may be void
 #  - time, datetime, dateutil, timezone: useful Python libraries
 #  - float_compare: Odoo function to compare floats based on specific precisions
-#  - log: log(message, level='info'): logging function to record information in ir.logging table
+#  - log: log(message, level='info'): logging function to record information.
 #  - UserError: Warning Exception to use with raise
 # To return an result, assign: result = value or 0 \n\n\n\n"""
 
