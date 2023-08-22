@@ -2,14 +2,16 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 import base64
-from datetime import datetime
+import time
 
 from pytz import timezone
+from datetime import datetime
 
 import odoo
-from odoo import fields, models, tools
+from odoo import fields, models
 from odoo.tools.float_utils import float_compare
 from odoo.tools.safe_eval import safe_eval
+from odoo.tools import dateutil
 
 
 class ResPartner(models.Model):
@@ -17,11 +19,19 @@ class ResPartner(models.Model):
     _inherit = "res.partner"
 
     sqi_profile_id = fields.Many2one(
-        comodel_name="res.partner.sqi.profile", string="SQI Profile", tracking=True
+        comodel_name="res.partner.sqi.profile",
+        string="SQI Profile",
+        track_visibility='onchange'
     )
-    sqi_value = fields.Integer(string="SQI Value", tracking=True, readonly=True)
+    sqi_value = fields.Integer(
+        string="SQI Value",
+        track_visibility='onchange',
+        readonly=True
+    )
     sqi_value_date = fields.Datetime(
-        string="SQI Value Date", tracking=True, readonly=True
+        string="SQI Value Date",
+        track_visibility='onchange',
+        readonly=True
     )
 
     def _get_domain(self):
@@ -65,9 +75,9 @@ class ResPartner(models.Model):
         eval_context = {
             "uid": self._uid,
             "user": self.env.user,
-            "time": tools.safe_eval.time,
-            "datetime": tools.safe_eval.datetime,
-            "dateutil": tools.safe_eval.dateutil,
+            "time": time,
+            "datetime": datetime,
+            "dateutil": dateutil,
             "timezone": timezone,
             "float_compare": float_compare,
             "b64encode": base64.b64encode,

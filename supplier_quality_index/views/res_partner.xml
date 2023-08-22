@@ -12,7 +12,7 @@
                 <page
                     string="SQI"
                     name="sqi"
-                    attrs="{'invisible': [('is_company', '=', False),('supplier_rank', '=', 0)]}"
+                    attrs="{'invisible': [('is_company', '=', False),('supplier', '=', False)]}"
                 >
                     <group string="Supplier Quality Index">
                         <field name="sqi_profile_id" />
