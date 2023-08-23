@@ -1,0 +1,42 @@
+# Copyright 2023 - TODAY, Marcel Savegnago <marcel.savegnago@escodoo.com.br>
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+
+from odoo import api, fields, models
+from odoo.exceptions import ValidationError
+from odoo.tools.safe_eval import test_python_expr
+
+
+class ResPartnerSqiProfile(models.Model):
+
+    _name = "res.partner.sqi.profile"
+    _description = "Partner SQI Profile"
+
+    DEFAULT_PYTHON_CODE = """# Available variables:
+#  - env: Odoo Environment on which the sqi profile is triggered
+#  - model: Odoo Model of the record on which the sqi profile is triggered;
+#  - record: record on which the sqi profile is triggered; may be void
+#  - records: recordset on which the sqi profile is triggered in multi-mode; may be void
+#  - time, datetime, dateutil, timezone: useful Python libraries
+#  - float_compare: Odoo function to compare floats based on specific precisions
+#  - log: log(message, level='info'): logging function to record information.
+#  - UserError: Warning Exception to use with raise
+# To return an result, assign: result = value or 0 \n\n\n\n"""
+
+    name = fields.Char(required=True)
+
+    # Python code
+    code = fields.Text(
+        string="Python Code",
+        groups="base.group_system",
+        required=True,
+        default=DEFAULT_PYTHON_CODE,
+        help="Write Python code that the sqi profile will execute. Some variables are "
+        "available for use; help about python expression is given in the help tab.",
+    )
+
+    @api.constrains("code")
+    def _check_python_code(self):
+        for profile in self.sudo().filtered("code"):
+            msg = test_python_expr(expr=profile.code.strip(), mode="exec")
+            if msg:
+                raise ValidationError(msg)
