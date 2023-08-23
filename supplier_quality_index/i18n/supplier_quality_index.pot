@@ -1,0 +1,122 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* supplier_quality_index
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: supplier_quality_index
+#: model:ir.model,name:supplier_quality_index.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__id
+msgid "ID"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__name
+msgid "Name"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.model,name:supplier_quality_index.model_res_partner_sqi_profile
+msgid "Partner SQI Profile"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__code
+msgid "Python Code"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.ui.menu,name:supplier_quality_index.res_partner_sqi_menu
+#: model_terms:ir.ui.view,arch_db:supplier_quality_index.res_partner_form_view
+msgid "SQI"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner__sqi_profile_id
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_users__sqi_profile_id
+#: model:ir.ui.menu,name:supplier_quality_index.res_partner_sqi_profile_menu
+msgid "SQI Profile"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner__sqi_value
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_users__sqi_value
+msgid "SQI Value"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner__sqi_value_date
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_users__sqi_value_date
+msgid "SQI Value Date"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model_terms:ir.ui.view,arch_db:supplier_quality_index.res_partner_form_view
+msgid "Supplier Quality Index"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.actions.act_window,name:supplier_quality_index.res_partner_sqi_profile_act_window
+msgid "Supplier Quality Index Profile"
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.actions.server,name:supplier_quality_index.res_partner_update_sqi_cron_ir_actions_server
+#: model:ir.cron,cron_name:supplier_quality_index.res_partner_update_sqi_cron
+#: model:ir.cron,name:supplier_quality_index.res_partner_update_sqi_cron
+msgid "Update Supplier Quality Index "
+msgstr ""
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,help:supplier_quality_index.field_res_partner_sqi_profile__code
+msgid "Write Python code that the sqi profile will execute. Some variables are available for use; help about python expression is given in the help tab."
+msgstr ""
+
+#. module: supplier_quality_index
+#: model_terms:ir.ui.view,arch_db:supplier_quality_index.res_partner_sqi_profile_form_view
+msgid "code"
+msgstr ""
+
