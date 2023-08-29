@@ -1,0 +1,133 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* supplier_quality_index
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#. module: supplier_quality_index
+#: model:ir.model,name:supplier_quality_index.model_res_partner
+msgid "Contact"
+msgstr "Contato"
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner__display_name
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__display_name
+msgid "Display Name"
+msgstr "Nome de Exibição"
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner__id
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__id
+msgid "ID"
+msgstr "ID"
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner____last_update
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile____last_update
+msgid "Last Modified on"
+msgstr "Última Modificação em"
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__write_uid
+msgid "Last Updated by"
+msgstr "Última Atualização por"
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__write_date
+msgid "Last Updated on"
+msgstr "Última Atualização em"
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: supplier_quality_index
+#: model:ir.model,name:supplier_quality_index.model_res_partner_sqi_profile
+msgid "Partner SQI Profile"
+msgstr "Perfil do Parceiro IQF"
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner_sqi_profile__code
+msgid "Python Code"
+msgstr "Código Python"
+
+#. module: supplier_quality_index
+#: model:ir.ui.menu,name:supplier_quality_index.res_partner_sqi_menu
+#: model_terms:ir.ui.view,arch_db:supplier_quality_index.res_partner_form_view
+msgid "SQI"
+msgstr "IQF"
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner__sqi_profile_id
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_users__sqi_profile_id
+#: model:ir.ui.menu,name:supplier_quality_index.res_partner_sqi_profile_menu
+msgid "SQI Profile"
+msgstr "Perfil IQF"
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner__sqi_value
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_users__sqi_value
+msgid "SQI Value"
+msgstr "Valor IQF"
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_partner__sqi_value_date
+#: model:ir.model.fields,field_description:supplier_quality_index.field_res_users__sqi_value_date
+msgid "SQI Value Date"
+msgstr "Data do Valor IQF"
+
+#. module: supplier_quality_index
+#: model_terms:ir.ui.view,arch_db:supplier_quality_index.res_partner_form_view
+msgid "Supplier Quality Index"
+msgstr "Índice de Qualidade do Fornecedor"
+
+#. module: supplier_quality_index
+#: model:ir.actions.act_window,name:supplier_quality_index.res_partner_sqi_profile_act_window
+msgid "Supplier Quality Index Profile"
+msgstr "Perfil do Índice de Qualidade do Fornecedor"
+
+#. module: supplier_quality_index
+#: model:ir.actions.server,name:supplier_quality_index.res_partner_update_sqi_cron_ir_actions_server
+#: model:ir.cron,cron_name:supplier_quality_index.res_partner_update_sqi_cron
+#: model:ir.cron,name:supplier_quality_index.res_partner_update_sqi_cron
+msgid "Update Supplier Quality Index "
+msgstr "Atualizar o Índice de Qualidade do Fornecedor"
+
+#. module: supplier_quality_index
+#: model:ir.model.fields,help:supplier_quality_index.field_res_partner_sqi_profile__code
+msgid ""
+"Write Python code that the sqi profile will execute. Some variables are "
+"available for use; help about python expression is given in the help tab."
+msgstr ""
+"Escreva o código Python que o perfil iqf executará. Algumas variáveis "
+"estão disponíveis para uso; a ajuda sobre a expressão Python é fornecida "
+"na guia Ajuda."
+
+#. module: supplier_quality_index
+#: model_terms:ir.ui.view,arch_db:supplier_quality_index.res_partner_sqi_profile_form_view
+msgid "code"
+msgstr "código"
