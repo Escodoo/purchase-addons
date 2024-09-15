@@ -9,11 +9,11 @@
     >
         <!-- Hiding the taxes column header -->
         <xpath expr="//th[@name='th_taxes']" position="attributes">
-            <attribute name="class">d-none</attribute>
+            <attribute name="class">invisible</attribute>
         </xpath>
         <!-- Hiding the taxes column content -->
         <xpath expr="//td[@name='td_taxes']" position="attributes">
-            <attribute name="class">d-none</attribute>
+            <attribute name="class">invisible</attribute>
         </xpath>
     </template>
 </odoo>
