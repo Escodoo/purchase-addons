@@ -9,6 +9,7 @@ from odoo.tools.safe_eval import test_python_expr
 class ResPartnerSqiProfile(models.Model):
 
     _name = "res.partner.sqi.profile"
+    _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "Partner SQI Profile"
 
     DEFAULT_PYTHON_CODE = """# Available variables:
