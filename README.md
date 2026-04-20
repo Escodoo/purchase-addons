@@ -1,4 +1,6 @@
 
+
+# Escodoo Odoo Purchase Addons
 <!-- /!\ Non OCA Context : Set here the badge of your runbot / runboat instance. -->
 [![Pre-commit Status](https://github.com/Escodoo/purchase-addons/actions/workflows/pre-commit.yml/badge.svg?branch=16.0)](https://github.com/Escodoo/purchase-addons/actions/workflows/pre-commit.yml?query=branch%3A16.0)
 [![Build Status](https://github.com/Escodoo/purchase-addons/actions/workflows/test.yml/badge.svg?branch=16.0)](https://github.com/Escodoo/purchase-addons/actions/workflows/test.yml?query=branch%3A16.0)
@@ -6,8 +8,6 @@
 <!-- /!\ Non OCA Context : Set here the badge of your translation instance. -->
 
 <!-- /!\ do not modify above this line -->
-
-# Escodoo Odoo Purchase Addons
 
 Escodoo add-ons used to extend or customize Odoo Purchase app functions.
 
