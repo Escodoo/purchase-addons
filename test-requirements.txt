@@ -1,0 +1,4 @@
+# sale_blanket_order_custom dependency
+odoo-addon-sale_blanket_order_custom @ git+https://github.com/Escodoo/sale-addons.git@16.0#subdirectory=setup/sale_blanket_order_custom
+# mis_builder_cash_flow_forecast_integration dependency
+odoo-addon-mis_builder_cash_flow_forecast_integration @ git+https://github.com/Escodoo/account-addons.git@16.0#subdirectory=mis_builder_cash_flow_forecast_integration
