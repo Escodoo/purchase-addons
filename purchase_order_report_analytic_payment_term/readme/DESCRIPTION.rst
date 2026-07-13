@@ -1,0 +1,1 @@
+Adds analytic accounts per line and payment terms to the purchase order PDF report
