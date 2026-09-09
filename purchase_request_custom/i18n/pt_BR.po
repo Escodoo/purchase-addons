@@ -44,9 +44,8 @@ msgstr "Acima do Alvo"
 
 #. module: purchase_request_custom
 #: model:ir.model.fields,field_description:purchase_request_custom.field_purchase_request_line__target_quantity
-#, fuzzy
 msgid "Target Quantity"
-msgstr "Preço Unitário Alvo"
+msgstr "Quantidade Alvo"
 
 #. module: purchase_request_custom
 #: model:ir.model.fields,field_description:purchase_request_custom.field_purchase_request_line__target_value
