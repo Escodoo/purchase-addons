@@ -7,13 +7,16 @@
         name="report_purchaseorder_document in (purchase_quotation_report_tax_removal)"
         inherit_id="purchase.report_purchaseorder_document"
     >
-        <!-- Hiding the taxes column header -->
+        <!-- Hiding the taxes column header.
+             t-if is used instead of a CSS class because the taxes cell renders
+             its class through t-attf-class, which overrides any static class
+             set by view inheritance. -->
         <xpath expr="//th[@name='th_taxes']" position="attributes">
-            <attribute name="class">invisible</attribute>
+            <attribute name="t-if">False</attribute>
         </xpath>
         <!-- Hiding the taxes column content -->
         <xpath expr="//td[@name='td_taxes']" position="attributes">
-            <attribute name="class">invisible</attribute>
+            <attribute name="t-if">False</attribute>
         </xpath>
     </template>
 </odoo>
